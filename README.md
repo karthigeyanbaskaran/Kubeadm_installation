@@ -80,7 +80,7 @@ kubectl get pods  --all-namespaces
 ## Now login to Worker Node
 
 ## Join worker node to Master Node
-# The below command will join worker node to master node, execute this a normal user by putting sudo before:
+## The below command will join worker node to master node, execute this a normal user by putting sudo before:
 ```bash
 sudo kubeadm join <master_node_ip>:6443 --token xrvked.s0n9771cd9x8a9oc \
     --discovery-token-ca-cert-hash sha256:288084720b5aad132787665cb73b9c530763cd1cba10e12574b4e97452137b4a
