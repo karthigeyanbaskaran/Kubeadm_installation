@@ -93,6 +93,8 @@ kubectl get nodes
 ```
 
 Links:
+```bash
 https://www.coachdevops.com/2020/06/how-to-setup-kubernetes-cluster-in.html
 https://stackoverflow.com/questions/72504257/i-encountered-when-executing-kubeadm-init-error-issue
 https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
+```
