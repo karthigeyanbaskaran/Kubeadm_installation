@@ -89,7 +89,7 @@ sudo kubeadm join <master_node_ip>:6443 --token xrvked.s0n9771cd9x8a9oc \
 ## Go to Master and type the below command
 ```bash
 kubectl get nodes
-##the above command should display both Master and worker nodes.
+## the above command should display both Master and worker nodes.
 ```
 
 Links:
