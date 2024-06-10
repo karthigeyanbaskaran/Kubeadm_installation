@@ -1,4 +1,4 @@
-## Prerequisites:
+## Prerequisites
 
 1. Ubuntu instance with 4 GB RAM - Master Node - (with ports open to all traffic)
 2. Ubuntu instance with at least 2 GB RAM - Worker Node - (with ports open to all traffic)
@@ -57,7 +57,7 @@ sudo su -
 kubeadm init
 ```
 
-## Now you face error:-
+## Now you face error
 ```bash
 rm /etc/containerd/config.toml
 systemctl restart containerd
@@ -68,7 +68,7 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-## Now we need weave network to enable dns connections:
+## Now we need weave network to enable dns connections
 ```bash
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
@@ -80,7 +80,7 @@ kubectl get pods  --all-namespaces
 ## Now login to Worker Node
 
 ## Join worker node to Master Node
-## The below command will join worker node to master node, execute this a normal user by putting sudo before:
+## The below command will join worker node to master node, execute this a normal user by putting sudo before
 ```bash
 sudo kubeadm join <master_node_ip>:6443 --token xrvked.s0n9771cd9x8a9oc \
     --discovery-token-ca-cert-hash sha256:288084720b5aad132787665cb73b9c530763cd1cba10e12574b4e97452137b4a
@@ -92,7 +92,7 @@ kubectl get nodes
 ## the above command should display both Master and worker nodes.
 ```
 
-## Links:
+## Links
 ```bash
 https://www.coachdevops.com/2020/06/how-to-setup-kubernetes-cluster-in.html
 https://stackoverflow.com/questions/72504257/i-encountered-when-executing-kubeadm-init-error-issue
