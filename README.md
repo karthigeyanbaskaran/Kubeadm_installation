@@ -92,7 +92,7 @@ kubectl get nodes
 ## the above command should display both Master and worker nodes.
 ```
 
-Links:
+## Links:
 ```bash
 https://www.coachdevops.com/2020/06/how-to-setup-kubernetes-cluster-in.html
 https://stackoverflow.com/questions/72504257/i-encountered-when-executing-kubeadm-init-error-issue
